@@ -1,0 +1,253 @@
+.name {
+  color: rgb(132 100 204) !important;
+  text-wrap-mode: nowrap;
+  text-align: center;
+  text-decoration: none !important;
+  &:hover, &:focus, &:active {
+    text-decoration: none !important;
+    color: rgb(132 100 204) !important;
+  }
+}
+
+.collapse-brand a {
+  text-decoration: none !important;
+  &:hover, &:focus, &:active {
+    text-decoration: none !important;
+  }
+}
+
+.no-underline {
+  text-decoration: none !important;
+  &:hover, &:focus, &:active {
+    text-decoration: none !important;
+  }
+}
+
+// Badge styles with !important
+.badge {
+  &-primary {
+    color: #2643e9 !important;
+    background-color: #cbd2f680 !important;
+    &[href] {
+      &:hover, &:focus {
+        color: #fff !important;
+        background-color: #324cdd !important;
+      }
+    }
+  }
+
+  &-secondary {
+    color: #d3d9e5 !important;
+    background-color: #ffffff80 !important;
+    &[href] {
+      &:hover, &:focus {
+        color: #212529 !important;
+        background-color: #d6dae2 !important;
+      }
+    }
+  }
+
+  &-success {
+    color: #1aae6f !important;
+    background-color: #93e7c380 !important;
+    &[href] {
+      &:hover, &:focus {
+        color: #fff !important;
+        background-color: #24a46d !important;
+      }
+    }
+  }
+
+  &-info {
+    color: #03acca !important;
+    background-color: #88e6f780 !important;
+    &[href] {
+      &:hover, &:focus {
+        color: #fff !important;
+        background-color: #0da5c0 !important;
+      }
+    }
+  }
+
+  &-warning {
+    color: #ff3709 !important;
+    background-color: #fec9bd80 !important;
+    &[href] {
+      &:hover, &:focus {
+        color: #fff !important;
+        background-color: #fa3a0e !important;
+      }
+    }
+  }
+
+  &-danger {
+    color: #f80031 !important;
+    background-color: #fbafbe80 !important;
+    &[href] {
+      &:hover, &:focus {
+        color: #fff !important;
+        background-color: #ec0c38 !important;
+      }
+    }
+  }
+
+  &-light {
+    color: #879cb0 !important;
+    background-color: #f4f5f680 !important;
+    &[href] {
+      &:hover, &:focus {
+        color: #fff !important;
+        background-color: #919ca6 !important;
+      }
+    }
+  }
+
+  &-dark {
+    color: #090c0e !important;
+    background-color: #5a657080 !important;
+    &[href] {
+      &:hover, &:focus {
+        color: #fff !important;
+        background-color: #0a0c0d !important;
+      }
+    }
+  }
+
+  &-default {
+    color: #091428 !important;
+    background-color: #3462af80 !important;
+    &[href] {
+      &:hover, &:focus {
+        color: #fff !important;
+        background-color: #0b1526 !important;
+      }
+    }
+  }
+
+  &-white {
+    color: #e8e3e3 !important;
+    background-color: #ffffff80 !important;
+    &[href] {
+      &:hover, &:focus {
+        color: #212529 !important;
+        background-color: #e6e6e6 !important;
+      }
+    }
+  }
+
+  &-neutral {
+    color: #e8e3e3 !important;
+    background-color: #ffffff80 !important;
+    &[href] {
+      &:hover, &:focus {
+        color: #212529 !important;
+        background-color: #e6e6e6 !important;
+      }
+    }
+  }
+
+  &-darker {
+    color: #000 !important;
+    background-color: #40404080 !important;
+    &[href] {
+      &:hover, &:focus {
+        color: #fff !important;
+        background-color: #000 !important;
+      }
+    }
+  }
+}
+
+#hello {
+  color: #f6f6f7;
+  font-family: Silkscreen;
+  font-weight: 500;
+  margin-left: 0;
+}
+#section-about-me .presentation .wrap-border {
+  -webkit-animation-duration: 0.6s;
+  animation-duration: 0.6s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: clignoter;
+  animation-name: clignoter;
+  transition: none;
+}
+
+#section-about-me .presentation p {
+  color: #f6f6f7;
+  text-shadow: 0.1em 0.1em 0.3em #5603ad;
+}
+html {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  height: 100%;
+  overflow: auto;
+}
+* {
+  cursor: pointer !important;
+}
+/* Adjust carousel control buttons */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 4% !important; /* Increase width to move buttons away from cards */
+  color: #fff;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* Ensure visibility on dark backgrounds */
+}
+
+/* Position buttons vertically centered but slightly outside */
+.carousel-control-prev {
+  left: -50px; /* Move left button outward */
+}
+
+.carousel-control-next {
+  right: -50px; /* Move right button outward */
+}
+
+@media (max-width: 768px) {
+  .carousel-control-prev {
+    left: -20px; /* Adjust spacing for mobile */
+  }
+  .carousel-control-next {
+    right: -20px;
+  }
+}
+
+/* Adjust carousel control buttons */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 20%; /* Reduced width for better positioning */
+  opacity: 0.8; /* Make buttons slightly transparent */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* Ensure visibility on dark backgrounds */
+  width: 3rem; /* Increase icon size */
+  height: 3rem;
+}
+
+/* Position buttons slightly outside */
+.carousel-control-prev {
+  left: -40px; /* Move left button outward */
+}
+
+.carousel-control-next {
+  right: -40px; /* Move right button outward */
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .carousel-control-prev {
+    left: -10px;
+  }
+  .carousel-control-next {
+    right: -10px;
+  }
+}
