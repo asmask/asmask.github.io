@@ -1,5 +1,5 @@
 <template>
-  <header class="header-global">
+  <header class="header-global fixed-top">
     <base-nav class="navbar-main" transparent type="white" effect="light" expand>
       <div class="row" slot="content-header" slot-scope="{ closeMenu }">
         <div class="col-8 collapse-brand">
@@ -75,7 +75,7 @@
       <ul class="navbar-nav align-items-lg-center ml-lg-auto">
         <li class="nav-item">
           <a
-            class="nav-link nav-link-icon"
+            class="nav-link nav-link-icon d-flex align-items-center justify-content-center"
             href="https://linkedin.com/in/asma-skhiri"
             target="_blank"
             rel="noopener"
@@ -88,7 +88,7 @@
         </li>
         <li class="nav-item">
           <a
-            class="nav-link nav-link-icon"
+            class="nav-link nav-link-icon d-flex align-items-center justify-content-center"
             href="https://github.com/asmask"
             target="_blank"
             rel="noopener"
@@ -103,6 +103,39 @@
     </base-nav>
   </header>
 </template>
+
+<style>
+.navbar-transparent .navbar-nav .nav-link {
+  color: rgb(132 100 204) !important;
+}
+.dropdown-item {
+  color: rgb(132 100 204) !important;
+}
+.dropdown-item:active, .dropdown-item:focus, .dropdown-item:hover {
+  background-color: rgba(132, 100, 204, 0.1) !important;
+  color: rgb(132, 100, 204) !important;
+}
+.nav-link-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0 !important;
+}
+.header-global {
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+@media (max-width: 768px) {
+  .dropdown-menu {
+    background-color: transparent !important;
+    border: none !important;
+  }
+  .dropdown-item {
+    padding-left: 1.5rem !important;
+  }
+}
+</style>
+
 <script>
 import BaseNav from '@/components/BaseNav.vue'
 import BaseDropdown from '@/components/BaseDropdown.vue'

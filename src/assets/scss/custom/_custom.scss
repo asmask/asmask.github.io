@@ -180,11 +180,13 @@
 }
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 html,
 body {
   height: 100%;
   overflow: auto;
+  padding-top: 80px;
 }
 * {
   cursor: pointer !important;
